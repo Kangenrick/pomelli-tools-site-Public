@@ -1,1 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Marketing Tools - Pomelli, VEO & More</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; max-width: 800px; margin: 0 auto; padding: 2rem; line-height: 1.6; background:#f5f5f5; }
+    h1 { color: #1a73e8; margin-bottom:0.5rem; }
+    h2 { margin-top:0; }
+    .tool-card { background: #ffffff; border-radius: 8px; padding: 1.5rem; margin: 1rem 0; border-left: 4px solid #1a73e8; }
+    .cta { background: #1a73e8; color: white; padding: 0.75rem 1.5rem; border-radius: 6px; text-decoration: none; display: inline-block; margin-top: 0.75rem; }
+    .cta:hover { background: #1557b0; }
+    .form-section { background: #ffffff; border: 2px solid #1a73e8; border-radius: 12px; padding: 1.5rem; margin: 1.5rem 0; }
+    input, select, textarea { width: 100%; padding: 0.6rem; margin: 0.4rem 0; border-radius: 6px; border: 1px solid #ccc; box-sizing: border-box; }
+    button { background: #1a73e8; color: #fff; border: none; border-radius: 6px; padding: 0.75rem 1.5rem; cursor: pointer; width: 100%; font-size: 1rem; margin-top:0.5rem; }
+    button:hover { background: #1557b0; }
+    #success { display:none; background:#d4edda; color:#155724; padding:0.75rem; border-radius:6px; margin-top:0.5rem; }
+    #error { display:none; background:#f8d7da; color:#721c24; padding:0.75rem; border-radius:6px; margin-top:0.5rem; }
+    .footer { text-align:center; margin-top:2rem; font-size:0.85rem; color:#666; }
+  </style>
+</head>
+<body>
+  <h1>AI Marketing Tools Hub</h1>
+  <p>Use these tools to turn any business website into on‑brand content packs you can sell for $500–$3,000 per month.</p>
 
+  <!-- Lead form (front-end only) -->
+  <div class="form-section">
+    <h2>📧 Get the FREE Pomelli Content Pack Checklist</h2>
+    <p>Drop your info below to get the step‑by‑step checklist for turning Pomelli into client content packs.</p>
+    <form id="leadForm">
+      <input type="text" id="name" placeholder="Your full name" required />
+      <input type="email" id="email" placeholder="Your best email" required />
+      <select id="niche" required>
+        <option value="">Your niche</option>
+        <option value="restaurants">Restaurants</option>
+        <option value="gyms">Gyms / Fitness</option>
+        <option value="realtors">Real Estate</option>
+        <option value="dentists">Dentists / Med</option>
+        <option value="agency">Marketing Agency</option>
+        <option value="other">Other</option>
+      </select>
+      <textarea id="website" rows="2" placeholder="Website URL (yours or a client’s, optional)"></textarea>
+      <button type="submit">Send me the free checklist</button>
+    </form>
+    <div id="success">✅ Thanks! This is just a demo form. Hook it to email or a CRM later.</div>
+    <div id="error">❌ Something went wrong. Try again.</div>
+  </div>
+
+  <!-- Pomelli -->
+  <div class="tool-card">
+    <h2>🧬 Google Pomelli (Main Tool)</h2>
+    <p>Pomelli is a free experimental AI tool from Google Labs and DeepMind that scans a business website, builds a “Business DNA” profile, and generates on‑brand marketing content. Available in English in the US, Canada, Australia and New Zealand.</p>
+    <a class="cta" href="https://labs.google.com/pomelli/about" target="_blank" rel="noopener">Access Pomelli (Free)</a>
+  </div>
+
+  <!-- VEO -->
+  <div class="tool-card">
+    <h2>🎥 Google VEO (Short‑Form Video)</h2>
+    <p>Use images from Pomelli and turn them into short‑form videos for Reels, TikTok and YouTube Shorts using Google’s video tools.</p>
+    <a class="cta" href="https://labs.google.com" target="_blank" rel="noopener">Explore Google Labs Video Tools</a>
+  </div>
+
+  <!-- Synthesia -->
+  <div class="tool-card">
+    <h2>🗣️ Synthesia (AI Avatar Videos)</h2>
+    <p>Create an AI avatar of yourself that can read your script and record talking‑head videos for YouTube, landing pages and client pitches.</p>
+    <a class="cta" href="https://www.synthesia.io" target="_blank" rel="noopener">Try Synthesia</a>
+  </div>
+
+  <!-- HighLevel -->
+  <div class="tool-card">
+    <h2>📈 HighLevel (Client & Campaign Management)</h2>
+    <p>Use HighLevel to manage leads, campaigns and social scheduling once you start selling Pomelli‑powered content packs.</p>
+    <a class="cta" href="https://offlinesharks.com/profitcenter" target="_blank" rel="noopener">HighLevel Trial + Snapshot</a>
+  </div>
+
+  <!-- Training -->
+  <div class="tool-card">
+    <h2>🎓 AI Fast Track Training</h2>
+    <p>4‑part training showing how to package AI tools like Pomelli into $500–$3,000/month subscription clients, plus software bonuses.</p>
+    <a class="cta" href="https://offlinesharks.com/aifasttrack" target="_blank" rel="noopener">Get the Free Training</a>
+  </div>
+
+  <p class="footer">
+    This page is for educational/demo purposes. Always check each tool’s site for current pricing, availability and terms.
+  </p>
+
+  <script>
+    document.getElementById('leadForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      document.getElementById('success').style.display = 'block';
+      document.getElementById('error').style.display = 'none';
+      this.reset();
+    });
+  </script>
+</body>
+</html>
